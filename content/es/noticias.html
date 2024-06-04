@@ -1,5 +1,4 @@
-<!-- https://startbootstrap.com/guides/bootstrap-form-setup-guide -->
-<!-- https://www.youtube.com/watch?v=Yg6POD0M30w -->
+<!-- From: https://github.com/StartBootstrap/startbootstrap-blog-post -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,12 +17,13 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">Proyecto INESData</a>
+                <a class="navbar-brand" href="#!">Incubadora INESData</a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>-->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="proyecto.html">Sobre el proyecto</a></li>
+                        <!--<li class="nav-item"><a class="nav-link " href="proyecto.html">Sobre...</a></li>-->
+                        <li class="nav-item"><a class="nav-link " href="repositorios.html">Repositorios</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a></li>
                         <li class="nav-item"><a class="nav-link" href="documentos.html">Documentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -40,10 +40,252 @@
         </nav>
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
-            <!-- Heading Row-->
+        <!-- Page content-->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+
+
+                        <!-- Post: Post content-->
+                        <article id="post-11">
+                            <!---- Post header ---->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Versión 0.2.0 del INESData Conector + Interface</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 20 de Mayo de 2024 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">conector</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">tecnología</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-10.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">El entorno <a href="https://github.com/oeg-upm/inesdata-local-env">INESData Local Environment</a> permite a los usuarios familiarizarse con el conector INESData. Mediante la ejecución del entorno local, los usuarios podrán conocer cómo funciona el conector de INESData así como comprobar cómo interactúan varios conectores entre sí.</p>
+                                <p class="fs-5 mb-4">El entorno está paquetizado y permite utilizar las últimas versiones de <a href="https://github.com/oeg-upm/inesdata-connector/tags"> INESData Connector (v0.2.0)</a> y del <a href="">INESData Interface Connector</a> mediante imágenes docker, mediante un simple: docker compose up. Entre las funcionalidades principales se encuentra: 
+                                    <ul>
+                                        <li>Se ha disponibilizado un colección Postman para realizar ejemplos de interacciones entre los conectores del entorno local de una manera sencilla</li>
+                                        <li>Se ha incluido un repositorio para los assets tipo S3 mediante MinIO como parte del despliegue automatizado del conector</li>
+                                        <li>Primera versión del Vocabulary Management que permite definir los vocabularios de cada Espacio de Datos en tiempo de diseño y crear automáticamente la UI para la anotación</li>
+                                        <li>La transferencia de assets es totalmente funcional desde la intrerfaz</li>
+                                    </ul>
+                                 </p>
+                                <p class="fs-5 mb-4"><a href="https://github.com/oeg-upm/inesdata-local-env">Enlace a Github</a></p>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-10">
+                            <!---- Post header ---->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Presentación en la Data Week 2024 Part I</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 18 de Marzo de 2024 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                            </header>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Nos enorgullece anunciar nuestra participación en la Data Week 2024, dentro del marco del Data Spaces Symposium 2024, que se celebró en Darmstadt, Alemania. Durante la sesión "Generative AI: BDVA’s Member’s Experience", tuvimos la oportunidad de compartir nuestras experiencias y avances en la inteligencia artificial generativa junto a otros líderes del sector.</p>
+                                <p class="fs-5 mb-4">Este evento ha supuesto ser un crisol de innovación y colaboración, donde exploraremos cómo la IA generativa está transformando los espacios de datos y potenciando nuevas oportunidades para la industria. </p>
+                                <p class="fs-5 mb-4">¡No podemos esperar a mostrarles cómo INESData está a la vanguardia de esta revolución tecnológica! Para más información, podéis visitar: <a href="https://data-week.eu/session/generative-ai-bdva-members-experience/">Data Week 2024 - Generative AI Session</a></p>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-12">
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Nota de prensa en el Portal UPM</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 22 de Enero de 2024 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">nota de prensa</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-12.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">El portal de la Universidad Politécnica de Madrid ha publicado una nota de prensa haciéndose eco del desarrollo, implicaciones y potencial de la incubadora INESData. </p>
+                                <p class="fs-5 mb-4">La nota de prensa resalta que "Desarrollar una Incubadora Española de Espacios de Datos para fomentar la adopción de este tipo de tecnología y acelerar el desarrollo de un ecosistema de Espacios de Datos en nuestro país es el objetivo de INESData (Infraestructura para la INvestigación de ESpacios de Datos) proyecto liderado desde la universidad Politécnica de Madrid (UPM) que ha recibido 5 millones de euros de financiación por parte Del programa español UNICO I+D Cloud." </p>
+                                <p class="fs-5 mb-4">Podéis encontrar la entrada en su portal <a href="https://www.upm.es/?id=CON07252&prefmt=articulo&fmt=detail">aquí</a></p>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-08">
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Publicación en JURIX'2023</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 20 de Diciembre de 2023 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">presentación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-08.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Nuestros compañeros Gabriela Argüelles Terrón, Patricia Martín Chozasy Víctor Rodríguez Doncel han publicado el artículo "Event Extraction and Semantic Representation from Spanish Workers’ Statute Using Large Language Models" como parte del 36th International Conference on Legal Knowledge and Information Systems (JURIX 2023).</p>
+                                <p class="fs-5 mb-4">Este trabajo utiliza LLMs para procesar una pieza importante de la legislación española: el Estatuto de los Trabajadores. El método propuesto extrae los eventos relevantes en sus artículos utilizando un modelo GPT-3.5 y representa las entidades involucradas en los eventos y las relaciones entre ellas como tripletas RDF. Los experimentos llevados a cabo para seleccionar una estrategia incluyen zero- and few-shot learning. Finalmente, este trabajo propone una estrategia para elevar las relaciones jurídicas extraídas a un gráfico de conocimiento jurídico. </p>
+                                <p class="fs-5 mb-4">Podéis encontrar el ar´ticulo como parte del IOS Press Ebooks <a href="https://ebooks.iospress.nl/doi/10.3233/FAIA230983">aquí</a></p>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-07">
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Nota de prensa en E.T.S.I. Informáticos.</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 19 de Diciembre de 2023 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">nota de prensa</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-07.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">El portal de la Escuela Técnica Superior de Ingenieros Informáticos ha publicado una nota de prensa haciéndose eco del desarrollo, implicaciones y potencial de la incubadora INESData. </p>
+                                <p class="fs-5 mb-4">La nota de prensa resalta que "El proyecto INESData (Infraestructura para la INvestigación de ESpacios de DAtos distribuidos en UPM) es una iniciativa liderada por la Universidad Politécnica de Madrid (UPM) a través de sus grupos de investigación Ontology Engineering Group (OEG) y el Centro de Proceso de Información y Telecomunicaciones (IPTC). Su misión principal es crear una incubadora de espacios de datos en España, con el objetivo de fomentar la investigación, el desarrollo y la innovación en áreas relacionadas con la tecnología de Espacios de Datos y promover la colaboración público-privada." </p>
+                                <p class="fs-5 mb-4">Podéis encontrar la entrada en su portal <a href="https://www.fi.upm.es/?id=tablon&acciongt=consulta1&idet=4993">aquí</a></p>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-05">
+                            <!---- Post header ---->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Presentación en DARIAH Day'2023. Jornadas sobre humanidades en CLARIAH-ES</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 15 Noviembre de 2023 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">presentación</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-05.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Nuestra compañera Paula Díez estuvo en la Biblioteca Nacional presentando el proyecto INESData en el contexto de la sesión <a href="https://www.bne.es/es/agenda/bibliotecas-datos-inteligencia-artificial-nuevas-rutas-conocimiento">Bibliotecas, datos, inteligencia artificial: las nuevas rutas del conocimiento</a> de las <a href="https://www.bne.es/es/agenda/dariah-day-jornadas-sobre-humanidades-digitales-clariah-es">Jornadas de Humanidades DARIAH Day'2023.</a></p>
+                                <p class="fs-5 mb-4">Durante la presentación, se destacó la importancia de la creación de espacios de datos interoperables y seguros en España y su impacto en Europa. </p>
+                                <p class="fs-5 mb-4">Puedes encontrar más información sobre el evento en el siguiente <a href="https://european-big-data-value-forum.eu/session/data-spaces-roadmap-and-future-programmes/">enlace</a>.</p>
+                            </section>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-04">
+                            <!---- Post header ---->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Presentación en el EBDVF'23</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 30 Octubre de 2023 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">diseminación</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../../assets/images/post-04.png" alt="..." /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Este pasado 26 de Octubre se presentó el proyecto, retos y objetivos en el <a href="https://european-big-data-value-forum.eu/">>European Big Data Value Forum (EBDVF)</a> durante la sesión "Data Spaces Roadmap and Future Programme". Esta es una oportunidad increíble para compartir nuestra visión y avances en la creación de espacios de datos interoperables y seguros en España y su impacto en Europa.</p>
+                                <p class="fs-5 mb-4">Puedes encontrar más información sobre el evento en el siguiente <a href="https://european-big-data-value-forum.eu/session/data-spaces-roadmap-and-future-programmes/">enlace</a>.</p>
+                            </section>
+                            </section>
+                        </article>
+
+                        <!-- Post: Post content-->
+                        <article id="post-02">
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Publicado el entregable E4. Versión preliminar del handbook.</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado el 30 Junio de 2023 por INESData</div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">entregables</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">handbook</a>
+                            </header>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Los avances en tecnología e inteligencia artificial (IA) han puesto en evidencia la importancia de los datos. En la actualidad, es muy frecuente usar tecnicas de aprendizaje profundo, Machine Learning en ingles, para la creación de sistemas y servicios. Dichas tecnicas necesitan usar una cierta cantidad de datos; es máas, dependiendo de la cantidad  y la calidad de los datos usados, el sistema obtenido sera de mayor o menor calidad. </p>
+                                <p class="fs-5 mb-4">Esta guía practica tiene como objetivo presentar los espacios de datos creados en la incubadora INESData y explicar el proceso de creacion para que los interesados en desarrollar espacios de datos puedan tener una referencia practica. Dado que el proyecto esta aún en sus primeras fases, está versión de la guía se centrara, sobre todo, en explicar que son los espacios de datos así como analizar las diferentes iniciativas internacionales que sirven como referencia.</p>
+                                <p class="fs-5 mb-4">Puedes encontrar el enlace y descargarte el documento en el siguiente <a href="https://drive.google.com/file/d/1uSbFhZMxlmG1ETUPKymmvhVqq3eSUj0p/view?usp=sharing">enlace</a>.</p>
+                            </section>
+                        </article>
+
+
+                        <!-- Template: Post content
+                        <article id="#template">
+                            // Post header
+                            <header class="mb-4">
+                                // Post title
+                                <h1 class="fw-bolder mb-1">Titulo</h1>
+                                // Post meta content
+                                <div class="text-muted fst-italic mb-2">Posted on January 1, 2023 by INESData</div>
+                                // Post categories
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#!">category</a>
+                            </header>
+                            // Preview image figure
+                            <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                            // Post content
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Parrafo</p>
+                                <p class="fs-5 mb-4">Parrafo</p>
+                                <p class="fs-5 mb-4">Parrafo</p>
+                                <h2 class="fw-bolder mb-4 mt-5">Titulo</h2>
+                                <p class="fs-5 mb-4">Parrafo</p>
+                                <p class="fs-5 mb-4">Parrafo</p>
+                            </section>
+                        </article>
+                        -->
+
+                    </div>
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+                        <!-- Side widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Listado de noticias</div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#post-11">Versión 0.2.0 del INESData Conector + Interface</a></li>
+                                    <li><a href="#post-10">Participación en la Data Week'24. Part I</a></li>
+                                    <!--<li><a href="#post-09">Publicado el entregable E16. Informe de diseminación</a></li>-->
+                                    <li><a href="#post-12">Nota de prensa en el Portal de la UPM</a></li>
+                                    <li><a href="#post-08">Presentación en JURIX'2023 </a></li>
+                                    <li><a href="#post-07">Nota de prensa en E.T.S.I. Informáticos</a></li>
+                                    <!--<li><a href="#post-06">Presentación en EAFT'23 - European Association for Terminology Summit</a></li>-->
+                                    <li><a href="#post-05">Presentación en DARIAH Day'2023</a></li>
+                                    <!--<li><a href="#post-12">Presentación en AETER'23</a></li>-->
+                                    <li><a href="#post-04">Participación en EBDVF'23</a></li>
+                                    <!-- <li><a href="#post-03">Participacion SEMIC'2023 - Interoperability in the Age of AI.</li> -->
+                                    <li><a href="#post-02">Versión preliminar del INESData handbook (E4)</a></li>
+                                    <!--<li><a href="#post-01">Bienvenido a la web de la incubadora INESDATA.</a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+
+
+            <!-- Heading Row
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <h1 class="font-weight-light">Proximamente...</h1>
-            </div>
+            </div> -->
             <!-- Content Row
             <div class="row gx-4 gx-lg-5">
                 <h1 class="mb-3">Contexto</h1>

@@ -93,11 +93,11 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
+  font-family: Raleway;
+  font-size: 1.2 rem;
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #203f57;
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -639,6 +639,8 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  text-align: left;
+  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -2845,11 +2847,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: #4dafba;
+  --bs-btn-border-color: #4dafba;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-bg: #94b1bb;
+  --bs-btn-hover-border-color: #94b1bb;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
@@ -2858,6 +2860,9 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
+  font-weight: 600;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .btn-secondary {
@@ -3728,7 +3733,7 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  background-color: #ef7011ff;
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
@@ -3790,6 +3795,9 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -8081,6 +8089,9 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  
+  font-weight: 600;
+
 }
 
 .text-body {
@@ -8131,7 +8142,7 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #3c6b85 !important;
 }
 
 .bg-success {
@@ -8161,7 +8172,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+/*  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;*/
 }
 
 .bg-black {
@@ -10823,4 +10834,120 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.logo {
+    text-align: center  ;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25rem;
+    text-indent: -9000px;
+    margin-left: 0; /* Resetea cualquier margen izquierdo automático */
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    max-width: 25rem;
+    margin:0;
+}
+.logo a {
+  display: flex;
+  height: auto;
+
+}
+.logo img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media (min-width: 1200px) {
+    h1, .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h1, .h1 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.bg-dark {
+
+  background-color: #ef7011ff;
+}
+
+.col-6 {
+  max-height: 52px;
+}
+.clearfix: {
+    clear:both;
+}
+
+.footer__wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    padding: 1rem 7rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    background-color: #ef7011ff;
+}
+
+.footer-menu { 
+    width: 100%;
+    
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.footer-menu__item {
+    float:left;
+}
+
+.logo1 .logo2, .logo3, .logo4, .logo5 {
+
+    margin-right: 0.7rem;
+       text-indent: -9000px;
+
+
+
+}
+
+
+ .logo3, .logo4 {
+    max-width: 10rem;
+ 
+}
+
+.logo2 {
+    max-width: 10rem;
+}
+
+.logo4 {
+
+    max-width: 10rem;
+}
+
+.logo1 {
+    max-width: 10rem;
+    margin-right: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+
+.logo5 {
+  max-width: 7rem;
+}
+
+.footer_text {
+    padding-top: 1rem;
+  font-weight: 600;
 }

@@ -639,7 +639,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  text-align: left;
+  text-align: justify;
   position: relative;
 }
 
@@ -10882,7 +10882,7 @@ h1, .h1 {
 .col-6 {
   max-height: 52px;
 }
-.clearfix: {
+.clearfix {
     clear:both;
 }
 

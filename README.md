@@ -1,7 +1,7 @@
 # inesdata-website
 
 Contact: 
-* Carlos Ruiz
+* Cristina Sandoval
 * Elena Montiel
 
 Official project website: https://inesdata-project.eu

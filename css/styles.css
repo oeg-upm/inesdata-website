@@ -5820,6 +5820,13 @@ textarea.form-control-lg {
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
+
+.carousel-image {
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: 400px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Escala y recorta la imagen para llenar el espacio */
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;

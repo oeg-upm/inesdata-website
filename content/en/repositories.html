@@ -13,41 +13,48 @@
                 <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-            <h1 class="logo navbar-brand text-center">
-                    <a href="index.html">
-                        Incubadora INESData
-                        <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData">
-                    </a>
+                <h1 class="logo navbar-brand text-center">
+                        <a href="index.html">
+                            Incubadora INESData
+                            <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData">
+                        </a>
                 </h1>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Main</a></li>
-                        <!--<li class="nav-item"><a class="nav-link active" aria-current="page" href="project.html">About the project</a></li>-->
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="repositories.html">Repositores</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Main</a></li> -->
+                        <!--<li class="nav-item"><a class="nav-link " href="proyecto.html">Sobre...</a></li>-->
+                        <li class="nav-item"><a class="nav-link " href="repositories.html">Repositories</a></li>
                         <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
                         <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-gear"></i> Data Spaces
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://mobility.ds.inesdata-project.eu/home">Mobility</a>
+                                <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/edl/en">Linguistic</a>
+                                <a class="dropdown-item" href="https://legal.ds.inesdata-project.eu/home">Legal</a>
+                                <a class="dropdown-item" href="../es/index.html">Digital Media</a>
+                            </div>
+                        </div>                        
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Language</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="../es/proyecto.html">Spanish</a>
-                              <a class="dropdown-item" href="../en/project.html">English</a>
+                            <a class="dropdown-item" href="../es/index.html">Spanish</a>
+                            <a class="dropdown-item" href="../en/index.html">English</a>
                             </div>
                         </div>
-                    <!-- 
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Documentos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Servicios</a></li>
-                    -->
+                    
                     </ul>
-                </div>
+                <!-- </div> -->
             </div>
         </nav>
         <!-- Page Content-->
@@ -56,7 +63,7 @@
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Repositorios</h1>
+                    <h1 class="font-weight-light">Repositories</h1>
                 </div>
             </div>
             <!-- Content Row-->
@@ -95,6 +102,21 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
+                            <h2 class="card-title">INESData Dataspace Deployment</h2>
+                            <p class="card-text">This repository contains the code for the automated deployment of elements of the INESData platform. The deployment of a working platform is divided in 3 different steps:</p>
+                            <ul>
+                                <li>Deploying the common services, which will be common to all the platform, and will be shared by all the different deployments.</li>
+                                <li>Deploying a dataspace, which in its core is a set of configurations for the platform and common services, and a public website.</li>
+                                <li>Deploying a connector, which is the main element that an organization will use to connect their data to the dataspace.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-deployment">Enlace</a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
                             <h2 class="card-title">INESData Dataspace Public Portal</h2>
                             <p class="card-text">Any data space requires a public portal that is a comprehensive resource for any organization interested in understanding the fundamentals of the Data Space. Typically, interested participants will find detailed information about the ecosystem's objectives, governance structure, and the various participants involved. This project allows promoters and participants to have a simplified way to configure and extend their public portal.</p>
                         </div>
@@ -123,8 +145,55 @@
                     </div>
                 </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">INESData Map</h2>
+                            <p class="card-text">Mapping tool designed to facilitate the creation and management of knowledge graphs using declarative rules. It includes a web application to define, store, and manage mapping rules that efficiently establish relationships between data. The solution includes an optimized engine capable of interpreting these rules and generating graphs from large volumes of data in various formats.</p>
+                        </div>
+                        <div class="card-footer">INESData Map <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map">Link</a> 
+                            <br>Map editor Back-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-editor-backend">Link</a>
+                            <br>Map editor Front-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-editor-frontend">Link</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title" style="text-align: left;">INESData Map: GenAI and KG Generation Modules</h2>
+                            <p class="card-text"><b>GenAI</b> is a Python package designed to use generative AI to automatically generate a mapping from the INESDATA-MAP mapper web application.</p>
+                            <p class="card-text"><b>KG_generation</b> is a Python package designed to generate a knowledge graph from a mapping file in RML format, along with the associated data sources and ontologies.</p>
+                        </div>
+                        <div class="card-footer">GenAI <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-gen-ai">Link</a> 
+                            <br>KG Generation <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-graph-engine">Link</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">INESData Registration Service</h2>
+                            <p class="card-text">Centralized service designed to manage and federate the participant's catalog. This service facilitates participant management via a RESTful API, providing specific endpoints to retrieve and modify participant information. The endpoints are structured with varying access levels to ensure that critical operations can only be performed by users with the <em>Admin</em> role.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-registration-service">Link</a></div>
+                    </div>
+                </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title" style="text-align: left;">Linguistic Data Space</h2>
+                            <p class="card-text">Linguistic data space for sharing language resources in Spanish and co-official languages.</p>
+                        </div>
+                        <div class="card-footer">Linguistic Space <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico">Link</a> 
+                            <br>Front-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-interface">Link</a>
+                            <br>ELG Connector <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-elg-connector">Link</a>
+                            <br>ELG Connector Web Service <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-elg-web-service">Link</a>
+                        </div>
+                    </div>
+                </div>
 
               </div>
             </div>

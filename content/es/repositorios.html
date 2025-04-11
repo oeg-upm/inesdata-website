@@ -13,41 +13,55 @@
                 <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-<h1 class="logo navbar-brand text-center">
+                    <h1 class="logo navbar-brand text-center">
         <a href="index.html">
             Incubadora INESData
             <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData">
         </a>
-    </h1>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </h1>
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
-                        <!--<li class="nav-item"><a class="nav-link " href="proyecto.html">Sobre...</a></li>-->  
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="repositorios.html">Repositorios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Principal</a></li> -->
+                        <!--<li class="nav-item"><a class="nav-link " href="proyecto.html">Sobre...</a></li>-->
+                        <li class="nav-item"><a class="nav-link " href="repositorios.html">Repositorios</a></li>
+                        <li class="nav-item"><a class="nav-link " href="noticias.html">Noticias</a></li>
                         <li class="nav-item"><a class="nav-link" href="documentos.html">Documentos</a></li>
-                        <li class="nav-item"><a class="nav-link"  href="contacto.html">Contacto</a></li>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-gear"></i> Espacios de Datos
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://mobility.ds.inesdata-project.eu/home">Movilidad</a>
+                                <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/edl">Lingüístico</a>
+                                <a class="dropdown-item" href="https://legal.ds.inesdata-project.eu/home">Jurídico</a>
+                                <a class="dropdown-item" href="../es/index.html">Medios digitales</a>
+                            </div>
+                        </div>                        
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Idioma</a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="../es/documentos.html">Español</a>
-                              <a class="dropdown-item" href="../en/documents.html">Ingles</a>
+                              <a class="dropdown-item" href="../es/index.html">Español</a>
+                              <a class="dropdown-item" href="../en/index.html">Inglés</a>
                             </div>
                         </div>
-                    <!-- 
+
+                        <!--
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Sobre nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Documentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Servicios</a></li>
-                    -->
+                        -->
                     </ul>
-                </div>
+
+                <!-- </div> -->
             </div>
         </nav>
         <!-- Page Content-->
@@ -95,6 +109,23 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
+                            <h2 class="card-title">Despliegue de un Espacio de Datos INESData</h2>
+                            <p class="card-text">Este repositorio contiene el código para el despliegue automatizado de elementos de la plataforma INESData. El despliegue de una plataforma funcional se divide en 3 pasos diferentes:</p>
+                            <ul>
+                                <li>Desplegar los servicios comunes, que serán compartidos por toda la plataforma y por todos los diferentes despliegues.</li>
+                                <li>Desplegar un espacio de datos, conjunto de configuraciones para la plataforma y los servicios comunes, además de un sitio web público.</li>
+                                <li>Desplegar un conector, que es el elemento principal que una organización utilizará para conectar sus datos al espacio de datos.</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-deployment">Enlace</a></div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
                             <h2 class="card-title">INESData Dataspace Portal Público</h2>
                             <p class="card-text">Cualquier espacio de datos requiere un portal público que sea un recurso integral para cualquier organización interesada en comprender los aspectos fundamentales del Espacio de Datos. Normalmente, los participantes interesados ​​encontrarán información detallada sobre los objetivos, estructura de gobernanza y los diversos participantes involucrados del ecosistema. Este proyecto permite a los promotores y participantes tener una forma simplificada de configurar y extender su portal público.</p>
                         </div>
@@ -116,15 +147,67 @@
                 <div class="col-md-4 mb-5">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h2 class="card-title">Generación de datasets para INESData Mobility Dataspace</h2>
+                            <h2 class="card-title" style="text-align: left;">Generación de conjuntos de datos para el Espacio de Datos de Movilidad</h2>
                             <p class="card-text">Es un paquete Python cuya finalidad es obtener información de fuentes de datos relacionadas con movilidad, y procesarla de tal forma que pueda ser almacenada dentro de un espacio de datos. Las fuentes de información disponibles para la extracción de datos son las siguientes: <a href="https://www.emtmadrid.es/Home">EMT (Empresa Municipal de Transportes de Madrid)</a>, <a href="https://www.aemet.es/es/portada">AEMET (Agencia Estatal de Meteorología)</a> y <a href="https://informo.madrid.es/#/realtime?panel=live">Informo (Información de Movilidad de Madrid)</a>. </p>
                         </div>
                         <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/oeg-upm/inesdata-mov-data-generation">Enlace</a></div>
                     </div>
                 </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">INESData Map</h2>
+                            <p class="card-text">Herramienta de mapeo diseñada para facilitar la creación y gestión de grafos de conocimiento mediante el uso de reglas declarativas. Incluye una aplicación web para definir, almacenar y administrar reglas de mapeo que permiten establecer relaciones entre datos de forma eficiente. La solución incluye un motor optimizado capaz de interpretar estas reglas y generar grafos a partir de grandes volúmenes de datos en diversos formatos.</p>
+                        </div>
+                        <div class="card-footer">INESData Map <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map">Enlace</a> 
+                            <br>Map editor Back-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-editor-backend">Enlace</a>
+                            <br>Map editor Front-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-editor-frontend">Enlace</a>
+                        </div>
+                       
+                    </div>
+                </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title" style="text-align: left;">INESData Map: Módulos GenAI y KG Generation</h2>
+                            <p class="card-text"><b>GenAI</b> es un paquete de Python cuya finalidad es utilizar la IA generativa para generar automáticamente un mapping desde la web de INESDATA-MAP mapper. </p>
+                            <p class="card-text"><b>KG_generation</b> es un paquete de Python cuya finalidad es generar un grafo de conocimiento a partir de un fichero de mapeos en formato RML, junto con las fuentes de datos y las ontologías asociadas.</p>
+                        </div>
+                        <div class="card-footer">GenAI <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-gen-ai">Enlace</a> 
+                            <br>KG Generation <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-map-graph-engine">Enlace</a>
+                        </div>
+                        
+                    </div>
+                </div>
 
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">INESData Registration Service</h2>
+                            <p class="card-text">Servicio centralizado diseñado para gestionar y federar el catálogo de participantes. Este servicio permitirá la gestión de participantes a través de una API RESTful, proporcionando endpoints específicos para obtener y modificar información de los participantes. Los endpoints están diseñados con diferentes niveles de acceso, asegurando que las operaciones críticas solo puedan ser realizadas por usuarios con el rol <em>Admin</em>.</p>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-registration-service">Link</a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title" style="text-align: left;">Espacio de Datos Lingüístico</h2>
+                            <p class="card-text">Espacio de datos lingüístico para compartir recursos del lenguaje en Español y lenguas cooficiales.  </p>
+                            
+                        </div>
+                        <div class="card-footer">Espacio lingüístico <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico">Enlace</a> 
+                            <br>Front-end <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-interface">Enlace</a>
+                            <br>ELG Connector <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-elg-connector">Enlace</a>
+                            <br>ELG Connector Web Service <a class="btn btn-primary btn-sm" href="https://github.com/INESData/inesdata-espacio-linguistico-elg-web-service">Enlace</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
 
               </div>
             </div>

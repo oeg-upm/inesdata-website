@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>INESData</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../../css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                    <h1 class="logo navbar-brand text-center">
+        <a href="index.html">
+            Incubadora INESData
+            
+            <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData" style="position: relative; left: -50px;">
+            
+        </a>
+                    </h1>
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                                       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link " href="repositories.html">Repositories</a></li>
+                        <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="documents.html">Documents</a></li>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-gear"></i> Data Spaces
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://mobility.ds.inesdata-project.eu/home">Mobility</a>
+                                <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/edl">Linguistic</a>
+                                <a class="dropdown-item" href="https://legal.ds.inesdata-project.eu/home">Legal</a>
+                                <a class="dropdown-item" href="../en/index.html">Digital Media</a>
+                            </div>
+                        </div>
+                        <li class="nav-item"><a class="nav-link" href="assets_catalog.html">Catalog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Language</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="../es/index.html">Spanish</a>
+                                <a class="dropdown-item" href="../en/index.html">English</a>
+                            </div>
+                        </div>
+                    </ul>
+                    </ul>
+
+                <!-- </div> -->
+            </div>
+        </nav>
+             
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Filter by Type -->
+            <div class="mb-3">
+                <!-- </div> -->
+            </div>
+        </nav>
+             
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Filtro por Tipo -->
+                       <div class="mb-3">
+                <label for="filterType" class="form-label">Filter by Type:</label>
+                <select id="filterType" class="form-select">
+                    <option value="all">All</option>
+                    <option value="Scientific Publication">Scientific Publication</option>
+                    <option value="Dataset">Dataset</option>
+                    <option value="Service">Service</option>
+                    <option value="Library">Library</option>
+                    <option value="Data Space Component">Data Space Component</option>
+                    <option value="Documentation">Documentation</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <!-- Tabla -->
+         <table class="table table-striped mt-4 text-start" id="resourceTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Resource</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Data Space</th>
+                        <th scope="col">Public</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                       <tr>
+                        <td>mderanklib</td>
+                        <td>Library</td>
+                        <td>Library for term extraction</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/oeg-upm/mderanklib">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>AttentionRankLib</td>
+                        <td>Library</td>
+                        <td>Library for term extraction</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/oeg-upm/AttentionRankLib">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Challenge: K-Flares: A K-Adapter Based Approach for the FLARES Challenge</td>
+                        <td>Other</td>
+                        <td>Official implementation of the paper "K-Adapter: Infusing Knowledge into Pre-Trained Models with Adapters", published in Findings of ACL-IJCNLP 2021.</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/oeg-upm/k-flares">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Autoregressive Language Models for Knowledge Base Population: A case study in the space mission domain</td>
+                        <td>Scientific Publication</td>
+                        <td>Knowledge graph generation from text.</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://arxiv.org/abs/2503.18502">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Infusing Large Language Models with Knowledge: A Round-trip Ticket</td>
+                        <td>Scientific Publication</td>
+                        <td>Starting position for Dagstuhl Seminar.</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25051">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Evaluating LLMs for factuality in multilingual, low-resourced scenarios associated with domain adaptation</td>
+                        <td>Scientific Publication</td>
+                        <td>Invited talk at Building Bridges with Industry @ CLARIN2024.</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://www.clarin.eu/event/2024/building-bridges-industry-clarin2024">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Domain-adapted models</td>
+                        <td>Other</td>
+                        <td>59 new models in the domains of health (4), insurance (45 models), and space (10 models).</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://labdemos.expertcustomers.ai/static/deliverables/KG4LLM_E4_2_LLM_adaptados_a_dominio_v1.1.pdf">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Training datasets for domain adaptation</td>
+                        <td>Dataset</td>
+                        <td>59 new models in the domains of health (4), insurance (45 models), and space (10 models).</td>
+                        <td>Linguistic</td>
+                        <td>Yes</td>
+                        <td><a href="https://labdemos.expertcustomers.ai/static/deliverables/KG4LLM_E4_2_LLM_adaptados_a_dominio_v1.1.pdf">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>MEL: Legal Spanish Language Model</td>
+                        <td>Scientific Publication</td>
+                        <td>Legal Spanish model</td>
+                        <td>Legal</td>
+                        <td>Yes</td>
+                        <td><a href="https://arxiv.org/abs/2501.16011">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>3CEL: A corpus of legal Spanish contract clauses</td>
+                        <td>Scientific Publication</td>
+                        <td>Corpus for clause detection in contracts</td>
+                        <td>Legal</td>
+                        <td>Yes</td>
+                        <td><a href="https://arxiv.org/abs/2501.15990">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>3CEL: A corpus of legal Spanish contract clauses</td>
+                        <td>Dataset</td>
+                        <td>Corpus for clause detection in contracts</td>
+                        <td>Legal</td>
+                        <td>Yes (restricted access)</td>
+                        <td><a href="">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Clause detection service in contracts</td>
+                        <td>Service</td>
+                        <td>API service for clause detection in contracts</td>
+                        <td>Legal</td>
+                        <td>Yes</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>LegalAct Corpus</td>
+                        <td>Dataset</td>
+                        <td>Corpus for normative quality</td>
+                        <td>Legal</td>
+                        <td>Yes (restricted access)</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Normative quality detection service</td>
+                        <td>Service</td>
+                        <td>API service for normative quality detection</td>
+                        <td>Legal</td>
+                        <td>Yes</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Bus arrival prediction model at a specific stop (Madrid)</td>
+                        <td>Service</td>
+                        <td>Model that predicts how much time is left for a bus to arrive at a queried stop in Madrid.</td>
+                        <td>Mobility</td>
+                        <td>Yes</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mobility DS Public portal</td>
+                        <td>Service</td>
+                        <td>Public portal presenting the use case, available asset catalog, and governance of the ED Mobility.</td>
+                        <td>Mobility</td>
+                        <td>Yes</td>
+                        <td><a href="https://mobility.ds.inesdata-project.eu/">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Daily datasets from AEMET</td>
+                        <td>Dataset</td>
+                        <td>Daily datasets from AEMET</td>
+                        <td>Mobility</td>
+                        <td>TBD</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Daily datasets from INFORMO</td>
+                        <td>Dataset</td>
+                        <td>Dataset with relevant daily information from INFORMO. This dataset starts in March 2024 and continues to expand.</td>
+                        <td>Mobility</td>
+                        <td>TBD</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Daily datasets from EMT</td>
+                        <td>Dataset</td>
+                        <td>Dataset with relevant daily information from EMT. This dataset starts in March 2024 and continues to expand.</td>
+                        <td>Mobility</td>
+                        <td>TBD</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                    <tr>
+                        <td>Web service for API usage (Bus prediction)</td>
+                        <td>Service</td>
+                        <td>Web service that securely accesses an API to predict bus arrivals at a specific stop, integrated into the data space connector.</td>
+                        <td>Mobility</td>
+                        <td>TBD</td>
+                        <td><a href="#">Coming soon</a></td>
+                    </tr>
+                                        <tr>
+                        <td>Mapper Frontend</td>
+                        <td>Library</td>
+                        <td>Frontend of the web application that creates a mapping file in RML / R2RML between different data sources and an ontology.</td>
+                        <td>Horizontal</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/INESData/inesdata-map-editor-frontend">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Mapper Backend</td>
+                        <td>Library</td>
+                        <td>Service responsible for saving a data source mapping and generating the corresponding R2RML / RML mapping file.</td>
+                        <td>Horizontal</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/INESData/inesdata-map-editor-backend">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Gen AI</td>
+                        <td>Library</td>
+                        <td>Python package designed to use generative AI to automatically generate a mapping from the INESDATA-MAP mapper web application.</td>
+                        <td>Horizontal</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/INESData/inesdata-map-gen-ai">Learn more</a></td>
+                    </tr>
+                    <tr>
+                        <td>Graph Engine</td>
+                        <td>Library</td>
+                        <td>Python package designed to generate a knowledge graph from a mapping file in RML format, along with the associated data sources and ontologies.</td>
+                        <td>Horizontal</td>
+                        <td>Yes</td>
+                        <td><a href="https://github.com/INESData/inesdata-map-graph-engine">Learn more</a></td>
+                    </tr>
+                    
+
+                    
+
+                   
+                </tbody>
+            </table>
+        </div>
+        
+        
+        
+        <!-- Footer-->
+        <footer class="page-footer clearfix">
+        
+        <div class="footer-wrapper"> 
+            <nav class="footer-menu clearfix">
+          <!--  <img src="../static/images/logopal.png" class="logo2"> !-->
+            <img src="../../assets/logos/nextgeneration-logo.png" class="logo1">
+            <img src="../../assets/logos/ministerio-logo.png" class="logo2">
+            <img src="../../assets/logos/unico-logo.png" class="logo3">
+            <img src="../../assets/logos/upm.png" class="logo4">
+            <img src="../../assets/logos/oeg-logo.gif" class="logo5">
+
+           
+            </nav>
+            <div class="container px-4 px-lg-5 text-center">
+                <p class="m-0 text-white footer_text">INESData (Infraestructura para la INvestigación de ESpacios de DAtos distribuidos en UPM) &copy; 2023 - TSI-063100-2022-0001</p>
+            </div>
+        </div>
+      
+</footer>
+<!--   
+        <footer class="py-5 bg-dark">
+        
+        </footer> -->
+       
+       
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+       
+        
+        <!-- Core theme JS-->
+        <script src="../../js/scripts.js"></script>        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const filterType = document.getElementById('filterType');
+                const table = document.getElementById('resourceTable');
+                const rows = table.querySelectorAll('tbody tr');
+
+                filterType.addEventListener('change', function () {
+                    const selectedType = this.value;
+
+                    rows.forEach(row => {
+                        const typeCell = row.cells[1].textContent.trim();
+                        if (selectedType === 'all' || typeCell === selectedType) {
+                            row.style.display = '';
+                        } else {
+                            row.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
+

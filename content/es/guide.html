@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Página con dos imágenes y un enlace a un documento" />
+        <meta name="author" content="INESData" />
+        <title>Imágenes y Documento</title>
+        <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
+        <link href="../../css/styles.css" rel="stylesheet" />
+        <style>
+            table {
+                border-collapse: separate;
+                border-spacing: 0.75rem 0.5rem;
+                width: 100%;
+            }
+            th, td {
+                text-align: left !important;
+                padding: 0.55rem 0.75rem;
+                vertical-align: top;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <h1 class="logo navbar-brand text-center">
+                    <a href="index.html">
+                        Incubadora INESData
+                        <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData" style="position: relative; left: -50px;">
+                    </a>
+                </h1>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-gear-wide-connected"></i> Espacios de Datos
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://mobility.ds.inesdata-project.eu/home">Movilidad</a>
+                            <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/edl">Lingüístico</a>
+                            <a class="dropdown-item" href="https://legal.ds.inesdata-project.eu/home">Jurídico</a>
+                            <a class="dropdown-item" href="../es/index.html">Medios digitales</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-hammer"></i> Servicios para EdD
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/kg4llm">Knowledge Graphs for LLMs</a>
+                            <a class="dropdown-item" href="mapper.html">Knowledge Graph Mappings</a> 
+                            <!-- <a class="dropdown-item" href="https://docker13486-inesdata-map.jelastic.labs.gmv.com/home">Knowledge Graph Mappings</a>  -->
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="bi bi-book"></i> Entregables
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" href="documentos.html">Documentos</a>
+                            <a class="dropdown-item" href="catalogo_recursos.html">Catálogo</a>
+                            <a class="dropdown-item" href="repositorios.html">Repositorios</a>
+                            <a class="dropdown-item" href="videos.html">Vídeos</a>
+                        </div>
+                    </div>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760;</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown4">
+                            <a class="dropdown-item" href="../es/index.html">Español</a>
+                            <a class="dropdown-item" href="../en/index.html">Inglés</a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container px-4 px-lg-5 my-5 mx-auto" style="max-width: 960px;">
+            <h1 id="-gu-a-introductoria-a-los-espacios-de-datos-inesdata-"><strong>Guía introductoria a los espacios de datos INESData</strong></h1>
+            <hr>
+            <h2 id="1-qu-es-un-espacio-de-datos-">1. ¿Qué es un espacio de datos?</h2>
+<p>Un <strong>espacio de datos</strong> (o <em>dataspace</em>) es una forma de <strong>compartir datos entre organizaciones</strong> sin tener que centralizarlos en un único repositorio común. Cada participante mantiene el control sobre sus propios datos: decide <strong>qué comparte, con quién, para qué uso y bajo qué condiciones</strong>. A esto se le conoce como <strong>soberanía de los datos</strong>.</p>
+<p>Piensa en un espacio de datos como un <strong>ecosistema o mercado de datos</strong>:</p>
+<ul>
+<li>Los datos se <strong>publican</strong> con descripción y condiciones de uso.</li>
+<li>Otros participantes los <strong>descubren</strong> en un catálogo.</li>
+<li>Se <strong>negocian acuerdos</strong> antes de acceder.</li>
+<li>El acceso se <strong>transfiere</strong> de forma controlada, sin que el proveedor pierda el control sobre su copia original.</li>
+</ul>
+<p><strong>¿En qué se diferencia de enviar un fichero por correo?</strong></p>
+<table>
+<thead>
+<tr>
+<th>Enviar un ZIP</th>
+<th>Espacio de datos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No hay catálogo: hay que saber qué existe</td>
+<td>Descubrimiento centralizado o federado</td>
+</tr>
+<tr>
+<td>No hay identidad verificada</td>
+<td>Acceso ligado a identidades y roles</td>
+</tr>
+<tr>
+<td>Sin condiciones formales de uso</td>
+<td>Reglas y acuerdos explícitos (políticas y contratos)</td>
+</tr>
+<tr>
+<td>Difícil revocar o auditar</td>
+<td>Trazabilidad de accesos y transferencias</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-inesdata-en-60-segundos">2. INESData en 60 segundos</h2>
+<div class="row gx-4 gx-lg-5">
+                <p>El objetivo del proyecto INESData es crear una Incubadora de Espacios de Datos en España para fomentar la adopción de la tecnología de Espacios de Datos y acelerar el desarrollo de un ecosistema de Espacios de Datos en España. El proyecto desarrollará tecnología complementaria, ofrecerá infraestructura de almacenamiento y procesamiento y contribuirá al ecosistema global con cuatro Espacios Nacionales de Datos (Idioma, Movilidad, Medios, Legal) adaptados a las necesidades lingüísticas y de datos de las regiones de habla hispana y, más ampliamente, a los Espacios de datos europeos.</p>
+                <p>El contexto de INESData está profundamente entrelazado con las iniciativas europeas de Espacios de Datos. El proyecto se alinea con los objetivos generales de la Unión Europea de crear espacios de datos interconectados en diferentes sectores y dominios. Esta iniciativa tiene como objetivo aprovechar los datos para la innovación, el crecimiento económico y los beneficios sociales en España.</p>
+                <p>El proyecto es una iniciativa de UNICO I+D Cloud, con el objetivo de reforzar la investigación, el desarrollo y la innovación para impulsar la consolidación de las empresas y universidades españolas en Europa en ámbitos como la Nube y fomentar la colaboración público-privada de ambas pymes. y Grupos de Investigación.</p>
+            </div>
+            <p>En la práctica, INESData pone a disposición de organizaciones y equipos técnicos:</p>
+<ul>
+<li><strong>Conectores</strong> para que cada participante entre en un espacio de datos.</li>
+<li>Una <strong>interfaz web</strong> para gestionar recursos, políticas y contratos.</li>
+<li><strong>APIs</strong> para integrar el intercambio de datos en aplicaciones propias.</li>
+<li><strong>Documentación, demos y materiales formativos</strong> para familiarizarse con el ecosistema.</li>
+</ul>
+<p>Los roles habituales son:</p>
+<ul>
+<li><strong>Proveedor</strong>: publica recursos (datasets, servicios, modelos) y define las condiciones de acceso.</li>
+<li><strong>Consumidor</strong>: descubre recursos en el catálogo, acuerda un contrato y accede a los datos.</li>
+</ul>
+<hr>
+<h2 id="3-las-piezas-principales-del-ecosistema">3. Las piezas principales del ecosistema</h2>
+<p>Un espacio de datos INESData combina varios componentes. No hace falta conocerlos todos para empezar, pero ayuda saber qué hace cada uno:</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>INESData Connector</strong></td>
+<td>Cerebro de cada participante. Gestiona recursos, políticas, contratos y transferencias. Está construido sobre <strong>Eclipse Dataspace Connector (EDC)</strong>, un framework open source para espacios de datos. Componente público del <a href="https://inesdata-project.eu/content/en/assets_catalog.html">catálogo INESData</a>.</td>
+</tr>
+<tr>
+<td><strong>INESData Dataspace Interface Connector</strong></td>
+<td>Interfaz web para operar el conector: crear recursos, ver el catálogo, firmar contratos y lanzar transferencias. También documentada en el catálogo público del proyecto.</td>
+</tr>
+<tr>
+<td><strong>Gestión de identidades</strong></td>
+<td>Controla quién puede acceder (usuarios, roles, grupos). Cada participante se autentica antes de usar la interfaz o las APIs.</td>
+</tr>
+<tr>
+<td><strong>Almacenamiento de objetos</strong></td>
+<td>Donde se guardan los ficheros asociados a los recursos publicados (compatible con el modelo S3).</td>
+</tr>
+<tr>
+<td><strong>Servicio de registro</strong></td>
+<td>Directorio de participantes del espacio de datos: quién está conectado y cómo localizar su conector.</td>
+</tr>
+<tr>
+<td><strong>Catálogo federado</strong></td>
+<td>Vista agregada de los recursos disponibles en todo el espacio, aunque estén repartidos entre varios conectores.</td>
+</tr>
+<tr>
+<td><strong>Portal público</strong></td>
+<td>Punto de entrada para consultar información y catálogo del espacio de datos, cuando está disponible.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dos planos de un conector:</strong> el <strong>plano de control</strong> (catálogo, contratos, políticas) y el <strong>plano de datos</strong> (transferencia real del fichero, stream o acceso a un servicio).</p>
+<hr>
+<h2 id="4-el-viaje-de-un-dato-publicar-descubrir-contratar-y-transferir">4. El viaje de un dato: publicar, descubrir, contratar y transferir</h2>
+<p>El flujo completo se resume en cuatro pasos. Un mismo escenario ilustra cada uno:</p>
+<p><em>Ejemplo: una administración pública publica un dataset de presupuestos y una empresa de investigación quiere usarlo.</em></p>
+<h3 id="paso-1-publicar-proveedor-">Paso 1 — Publicar (proveedor)</h3>
+<p>La administración pública, desde su conector:</p>
+<ol>
+<li>Define un <strong>asset</strong> (recurso): por ejemplo, un dataset con metadatos.</li>
+<li>Crea <strong>políticas</strong> (reglas de acceso y de uso).</li>
+<li>Ensambla una <strong>definición de contrato</strong> que une el asset con esas políticas.</li>
+<li>El recurso queda disponible como <strong>oferta</strong> en el catálogo.</li>
+</ol>
+<h3 id="paso-2-descubrir-consumidor-">Paso 2 — Descubrir (consumidor)</h3>
+<p>La empresa de investigación abre el <strong>Catalog Browser</strong>, busca recursos por tema o formato y consulta las condiciones asociadas a cada oferta.</p>
+<h3 id="paso-3-contratar-consumidor-proveedor-">Paso 3 — Contratar (consumidor ↔ proveedor)</h3>
+<p>La empresa solicita acceso. Los conectores acuerdan un <strong>contrato</strong>: un acuerdo concreto entre proveedor y consumidor para ese asset, vinculado a las políticas definidas. Una vez firmado, el contrato aparece en la pestaña <strong>Contracts</strong>.</p>
+<h3 id="paso-4-transferir-consumidor-">Paso 4 — Transferir (consumidor)</h3>
+<p>Con el contrato activo, la empresa inicia una <strong>transferencia</strong>. El conector habilita el acceso al dato (descarga, stream o endpoint). El resultado queda registrado en <strong>Transfer History</strong>.</p>
+<hr>
+<h2 id="5-la-interfaz-del-conector-pesta-as-principales">5. La interfaz del conector: pestañas principales</h2>
+<p>La interfaz del conector organiza el trabajo en pestañas. Cada una corresponde a un concepto del flujo anterior:</p>
+<table>
+<thead>
+<tr>
+<th>Pestaña</th>
+<th>Qué es</th>
+<th>Acción típica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vocabularies</strong></td>
+<td>Esquemas para describir recursos de forma uniforme (campos, tipos, valores permitidos).</td>
+<td>Definir cómo deben documentarse ciertos tipos de asset.</td>
+</tr>
+<tr>
+<td><strong>Assets</strong></td>
+<td>Recursos publicables: datasets, servicios o recursos de aprendizaje automático.</td>
+<td>Crear y registrar lo que quieres compartir.</td>
+</tr>
+<tr>
+<td><strong>Policies</strong></td>
+<td>Reglas de acceso y de uso.</td>
+<td>Definir quién puede pedir un recurso y bajo qué condiciones.</td>
+</tr>
+<tr>
+<td><strong>Contract Definitions</strong></td>
+<td>Empaquetado &quot;asset + políticas&quot; = oferta publicable.</td>
+<td>Convertir un asset interno en oferta del catálogo.</td>
+</tr>
+<tr>
+<td><strong>Catalog Browser</strong></td>
+<td>Escaparate de ofertas de todo el espacio de datos.</td>
+<td>Descubrir recursos de otros participantes y ver sus condiciones.</td>
+</tr>
+<tr>
+<td><strong>Contracts</strong></td>
+<td>Acuerdos ya firmados entre proveedor y consumidor.</td>
+<td>Consultar contratos activos e iniciar una transferencia.</td>
+</tr>
+<tr>
+<td><strong>Transfer History</strong></td>
+<td>Historial de transferencias realizadas.</td>
+<td>Ver qué transferencias se han ejecutado y su estado.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tipos de asset</strong> documentados: <strong>Dataset</strong>, <strong>Service</strong> y <strong>Machine Learning</strong>.</p>
+<p><strong>Formas de referenciar el dato</strong> en un asset:</p>
+<ul>
+<li>Almacenamiento interno del espacio de datos.</li>
+<li>Enlace a un recurso accesible por URL.</li>
+<li>Almacenamiento externo compatible con S3.</li>
+</ul>
+<p><strong>Dos tipos de política</strong> al definir un contrato:</p>
+<ul>
+<li><strong>Access Policy</strong>: quién puede solicitar acceso.</li>
+<li><strong>Contract Policy</strong>: condiciones de uso una vez concedido el acceso.</li>
+</ul>
+<hr>
+<h2 id="6-ui-y-api-dos-formas-de-interactuar-con-el-conector">6. UI y API: dos formas de interactuar con el conector</h2>
+<p>INESData es <strong>API-driven</strong>: la lógica principal vive en el conector y sus APIs; la interfaz web es un cliente más de esas APIs.</p>
+<h3 id="interfaz-web-ui-">Interfaz web (UI)</h3>
+<p>Pensada para usuarios que gestionan recursos, políticas y contratos de forma visual. Tras autenticarse, la interfaz llama al conector en nombre del usuario.</p>
+<h3 id="apis">APIs</h3>
+<p>Pensadas para integradores y aplicaciones que automatizan el flujo. Hay dos niveles:</p>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Qué gestiona</th>
+<th>Ejemplo de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Servicio de registro</strong></td>
+<td>Participantes (conectores) del espacio de datos</td>
+<td>Alta y consulta de organizaciones conectadas</td>
+</tr>
+<tr>
+<td><strong>APIs del conector</strong></td>
+<td>Assets, políticas, contratos, catálogo y transferencias</td>
+<td>Publicar un dataset desde una aplicación propia</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regla práctica:</strong> un conector con APIs activas puede operarse sin interfaz gráfica; una interfaz sin conector detrás no puede gestionar recursos ni transferencias.</p>
+<hr>
+<h2 id="7-espacios-de-datos-y-ejemplos-documentados">7. Espacios de datos y ejemplos documentados</h2>
+<p>Según la <a href="https://inesdata-project.eu/content/es/proyecto.html">comunicación pública del proyecto</a>, INESData contribuye al ecosistema con <strong>cuatro Espacios Nacionales de Datos</strong>, adaptados a las necesidades de las regiones de habla hispana y alineados con los espacios de datos europeos:</p>
+<table>
+<thead>
+<tr>
+<th>Dominio</th>
+<th>Enfoque</th>
+<th>Ejemplo documentado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Idioma</strong></td>
+<td>Recursos lingüísticos; vinculación con el Espacio Europeo de Datos Lingüísticos</td>
+<td>Integración con el European Language Grid (ELG) para incorporar datasets lingüísticos al espacio de datos</td>
+</tr>
+<tr>
+<td><strong>Movilidad</strong></td>
+<td>Datos del ámbito de la movilidad; vinculación con el Espacio Europeo de Datos de Movilidad</td>
+<td>Validaciones documentadas con recursos, contratos y transferencias registrados en la documentación del proyecto</td>
+</tr>
+<tr>
+<td><strong>Medios</strong></td>
+<td>Contenido multimedia bajo gobernanza; vinculación con el Espacio Europeo de Datos de Medios Digitales</td>
+<td>Plataforma de consumo de vídeo (streaming adaptativo) conectada al catálogo federado y a las políticas del ecosistema</td>
+</tr>
+<tr>
+<td><strong>Legal</strong></td>
+<td>Datos jurídicos y de contratación pública</td>
+<td>Dominio referenciado en la comunicación pública del proyecto; sin cifras en el snapshot documental disponible</td>
+</tr>
+</tbody>
+</table>
+<p>Además de estos espacios nacionales, la web oficial indica que el proyecto <strong>acompaña a empresas y organizaciones públicas</strong> para participar en espacios de datos existentes y <strong>apoyar la creación de nuevos espacios</strong> en otros dominios.</p>
+<p>Los espacios documentados <strong>pueden agrupar varios conectores</strong> (organizaciones participantes) que intercambian recursos bajo un marco común de identidad, catálogo y contratos.</p>
+<p>En los dominios de idioma y medios, la documentación del proyecto recoge también servicios y recursos de valor añadido —como traducción, transcripción, subtitulado, corpus multilingües, anonimización y categorización— que complementan el intercambio gobernado de datos.</p>
+<hr>
+<h2 id="8-continuidad-y-reutilizaci-n-del-trabajo-realizado">8. Continuidad y reutilización del trabajo realizado</h2>
+<p>El trabajo realizado en INESData ha dejado una <strong>base técnica, documental y metodológica</strong> que puede <strong>reutilizarse en nuevas validaciones y escenarios relacionados con espacios de datos</strong>.</p>
+<p>Más allá de un despliegue puntual, el proyecto ha generado:</p>
+<ul>
+<li><strong>Conocimiento reutilizable</strong> sobre cómo diseñar, desplegar y operar espacios de datos.</li>
+<li><strong>Componentes</strong> (conectores, interfaz, servicios de registro, catálogo) documentados y  utilizados en distintos escenarios de validación.</li>
+<li><strong>Documentación y materiales formativos</strong> (guías, demos, talleres) que explican assets, políticas, contratos, UI y APIs.</li>
+<li><strong>Patrones de uso</strong> validados en un flujo completo: publicar → descubrir → contratar → transferir.</li>
+</ul>
+<p>Esta base <strong>puede ayudar a acelerar nuevas validaciones en otros dominios</strong>, y la <strong>experiencia acumulada</strong> <strong>puede facilitar</strong> <strong>adaptar despliegues a diferentes contextos técnicos</strong>. También abre la puerta a incorporar <strong>servicios complementarios</strong> vinculados a interoperabilidad, semántica o procesamiento avanzado de datos, en línea con la orientación del propio proyecto hacia servicios de valor añadido.</p>
+<p>El trabajo realizado <strong>constituye un punto de partida</strong> para quienes quieran seguir explorando espacios de datos. <strong>No implica</strong> un producto cerrado ni una infraestructura única y definitiva, sino <strong>componentes, documentación y aprendizajes en evolución</strong> que pueden servir de referencia en nuevas iniciativas.</p>
+<p>*enlaces a los proyectos y una explicación breve</p>
+<hr>
+<h2 id="9-glosario-breve">9. Glosario breve</h2>
+<p>Algunos términos del ecosistema aparecen en inglés en la interfaz; aquí se resumen en español.</p>
+<table>
+<thead>
+<tr>
+<th>Término</th>
+<th>Explicación breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asset / Recurso</strong></td>
+<td>Dato, servicio o modelo que se publica en el espacio de datos.</td>
+</tr>
+<tr>
+<td><strong>Policy / Política</strong></td>
+<td>Regla que define quién puede acceder o bajo qué condiciones.</td>
+</tr>
+<tr>
+<td><strong>Contract Definition / Definición de contrato</strong></td>
+<td>Oferta que vincula un recurso con sus políticas.</td>
+</tr>
+<tr>
+<td><strong>Contract / Contrato</strong></td>
+<td>Acuerdo entre proveedor y consumidor para acceder a un recurso.</td>
+</tr>
+<tr>
+<td><strong>Catalog Browser / Navegador del catálogo</strong></td>
+<td>Vista para descubrir recursos publicados por otros participantes.</td>
+</tr>
+<tr>
+<td><strong>Transfer History / Historial de transferencias</strong></td>
+<td>Registro de transferencias realizadas.</td>
+</tr>
+<tr>
+<td><strong>Connector / Conector</strong></td>
+<td>Componente con el que cada participante opera en el espacio de datos.</td>
+</tr>
+<tr>
+<td><strong>Dataspace / Espacio de datos</strong></td>
+<td>Entorno federado de intercambio gobernado entre organizaciones.</td>
+</tr>
+<tr>
+<td><strong>Participant / Participante</strong></td>
+<td>Organización conectada al espacio (como proveedor o consumidor).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="10-saber-m-s">10. Saber más</h2>
+
+<p>Para más información, consultar la <a href="https://inesdata-project.eu">web oficial del proyecto INESData</a> y sus canales de contacto.</p>
+        </div>
+
+        <footer class="page-footer clearfix">
+            <div class="footer-wrapper">
+                <nav class="footer-menu clearfix">
+                    <img src="../../assets/logos/nextgeneration-logo.png" class="logo1">
+                    <img src="../../assets/logos/ministerio-logo.png" class="logo2">
+                    <img src="../../assets/logos/unico-logo.png" class="logo3">
+                    <img src="../../assets/logos/upm.png" class="logo4">
+                    <img src="../../assets/logos/oeg-logo.gif" class="logo5">
+                </nav>
+                <div class="container px-4 px-lg-5 text-center">
+                    <p class="m-0 text-white footer_text">INESData &copy; 2023 - TSI-063100-2022-0001</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/scripts.js"></script>
+    </body>
+</html>

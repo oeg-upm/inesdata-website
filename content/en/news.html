@@ -8,80 +8,36 @@
         <title>INESData</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="../../css/styles.css" rel="stylesheet" />
+        <!-- Shared site styles -->
+        <link href="../../css/site.css" rel="stylesheet" />
                 <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
     </head>
     <body>
          <!-- Responsive navbar-->
-         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                    <h1 class="logo navbar-brand text-center">
-        <a href="index.html">
-            Incubadora INESData
-            
-            <img src="../../assets/logos/inesdata-logo.png" alt="Logo INESData" style="position: relative; left: -50px;">
-            
-        </a>
-                    </h1>
-                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Principal</a></li> -->
-                        <!--<li class="nav-item"><a class="nav-link " href="proyecto.html">Sobre...</a></li>-->
-                        
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-gear-wide-connected"></i> Data Spaces
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="https://mobility.ds.inesdata-project.eu/home">Mobility</a>
-                                <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/edl">Linguistic</a>
-                                <a class="dropdown-item" href="https://legal.ds.inesdata-project.eu/home">Legal</a>
-                                <a class="dropdown-item" href="https://multimedia.ds.inesdata-project.eu">Digital Media</a>
-                                    
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-hammer"></i> Data Space Services
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="https://labdemos.expertcustomers.ai/kg4llm">Knowledge Graphs for LLMs</a>
-                                <a class="dropdown-item" href="mapper.html">Knowledge Graph Mappings</a>                                
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="bi bi-book"></i> Deliverables
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="documents.html">Documents</a>
-                                <a class="dropdown-item" href="assets_catalog.html">Catalogue</a>
-                                <a class="dropdown-item" href="repositories.html">Repositories</a>
-                                <a class="dropdown-item" href="videos.html">Videos</a>                                 
-                            </div>
-                        </div>
-                        
-                        <li class="nav-item"><a class="nav-link " href="news.html">News</a></li>
-                                                                        
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760;</a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="../es/index.html">Spanish</a>
-                              <a class="dropdown-item" href="../en/index.html">English</a>
-                            </div>
-                        </div>
-
-                        
-                    </ul>
-
-                <!-- </div> -->
-            </div>
-        </nav>
+    <header class="site-header unified-header">
+        <div class="site-shell header-inner">
+            <a class="brand" href="index.html" aria-label="INESData home">
+                <img src="../../assets/logos/inesdata-logo.png" alt="INESData" width="172" height="48">
+                <span class="brand-context">An OEG-UPM initiative</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+            <nav id="site-menu" class="site-menu" aria-label="Main navigation">
+                <details class="header-dropdown"><summary>Data spaces</summary><div class="header-dropdown-menu">
+                    <a href="https://mobility.ds.inesdata-project.eu/home">Mobility</a><a href="https://labdemos.expertcustomers.ai/edl">Language</a><a href="https://legal.ds.inesdata-project.eu/home">Legal</a><a href="https://multimedia.ds.inesdata-project.eu">Digital media</a>
+                </div></details>
+                <details class="header-dropdown"><summary>Services</summary><div class="header-dropdown-menu">
+                    <a href="https://labdemos.expertcustomers.ai/kg4llm">Knowledge Graphs for LLMs</a><a href="mapper.html">Knowledge graph mappings</a>
+                </div></details>
+                <details class="header-dropdown"><summary>Resources</summary><div class="header-dropdown-menu">
+                    <a href="documents.html">Documents</a><a href="assets_catalog.html">Catalogue</a><a href="repositories.html">Repositories</a><a href="videos.html">Videos</a>
+                </div></details>
+                <a href="news.html">News</a><a href="contact.html" class="nav-cta">Contact</a><a href="../es/noticias.html" class="language-link" lang="es" aria-label="Cambiar a español">ES</a>
+            </nav>
+        </div>
+    </header>
        <!-- Page Content-->
        <div class="container px-4 px-lg-5">
         <!-- Page content-->
@@ -145,7 +101,7 @@
                                 <p class="fs-5 mb-4">With this dual presence in Barcelona and Arequipa, INESData reaffirms its commitment to advancing European linguistic infrastructure and to promoting research and innovation in language technologies.</p>
                             </section>
                         </article>
-                       
+
 
                         <!-- Post: Post content-->
                         <article id="post-24">
@@ -171,16 +127,16 @@
                                 <p class="fs-5 mb-4">During her talk, Elena reflected on how digital technologies have transformed the way we live and create, generating a “digital version of the world” in which data becomes a raw material for innovation. She also emphasized the importance of ensuring the responsible, truthful, and lawful use of data, as well as the need to promote open, interoperable, and sustainable ecosystems that boost the new data economy in Europe and the Spanish-speaking world.</p>
                                 <p class="fs-5 mb-4">Other INESData team members also participated actively in the congress. Óscar Corcho spoke in the session <em>“The use of artificial intelligence in teaching the Spanish language”</em>, while Víctor Rodríguez took part in the panel <em>“Ethics and responsibility in the application of artificial intelligence to language”</em>, contributing the project's perspective on the responsible and sustainable development of these technologies.</p>
                                 <p class="fs-5 mb-4">INESData's participation in this important international forum reinforces its commitment to promoting a data culture and highlighting the role of European data spaces in innovation and competitiveness.</p>
-                                
-                                <p class="fs-5 mb-4">🎥 
+
+                                <p class="fs-5 mb-4">🎥
                                     <a href="https://www.youtube.com/watch?v=4sS3mSamGQE&t=6785s">Access to the full session video (Spanish)</a>
-                                </p>   
-                                <p class="fs-5 mb-4">🎥 
+                                </p>
+                                <p class="fs-5 mb-4">🎥
                                     <a href="https://congresodelalenguaarequipa.pe/en-directo/">Access to all congress videos (Spanish)</a>
-                                </p>                              
+                                </p>
                             </section>
                         </article>
-                        
+
                         <!-- Post: Post content-->
                         <article id="post-22">
                             <!---- Post header ---->
@@ -188,7 +144,7 @@
                                 <!-- Post title-->
                                  <h1 class="fw-bolder mb-1 text-start">Press play!</h1>
                                 <h2 class="fw-bold mb-1">This is how our services work in the Data Spaces</h2>
-                    
+
                                 <!-- Post meta content-->
                                 <div class="text-muted fst-italic mb-2">Published on September 15, 2025 by INESData</div>
                                 <!-- Post categories-->
@@ -202,9 +158,9 @@
                             <!-- Post content-->
                             <section class="mb-5">
                                 <p class="fs-5 mb-4">We are launching a new videos section at INESData. You can now explore on our website a new space full of demos and presentations that directly and visually showcase some of the services we offer in the Data Spaces. It's a quick way to discover how we work and what solutions we are developing.</p>
-                                <p class="fs-5 mb-4">🎥 
+                                <p class="fs-5 mb-4">🎥
                                     <a href="videos.html">Visit the videos section</a>
-                                    </p>                               
+                                    </p>
                             </section>
                         </article>
 
@@ -228,14 +184,14 @@
                             <!-- Post content-->
                             <section class="mb-5">
                                 <p class="fs-5 mb-4">We are pleased to announce that the <a href="https://oeg.fi.upm.es/index.php/en/index.html">Ontology Engineering Group (OEG)</a> at the Universidad Politécnica de Madrid has launched the <strong>PIONERA (Enhancing Interoperability in Data Spaces through Artificial Intelligence)</strong> project, funded under the <a href="https://portalayudas.digital.gob.es/Productos-Servicios-Espacios-Datos/Paginas/Index.aspx">2024 Call for the development of technological products and services for data spaces</a> by the Ministry for Digital Transformation and Public Service.</p>
-                                <p class="fs-5 mb-4">The project arises from the experience of INESData, where limitations were identified in a key aspect: the semantic interoperability of data, both within the same sector and across different sectors. These barriers hinder the deployment of all the necessary functionalities in data spaces, making it essential to develop new components that enhance their value.</p> 
+                                <p class="fs-5 mb-4">The project arises from the experience of INESData, where limitations were identified in a key aspect: the semantic interoperability of data, both within the same sector and across different sectors. These barriers hinder the deployment of all the necessary functionalities in data spaces, making it essential to develop new components that enhance their value.</p>
                                 <p class="fs-5 mb-4">To overcome these challenges, PIONERA will develop three new key components: an <strong>Ontology Hub</strong> for the management of ontologies and vocabularies, a <strong>Semantic Virtualizer</strong> aimed at data enrichment, and an <strong>AI Model Catalog</strong> that will enable the search, selection, and use of artificial intelligence models in data spaces.</p>
                                 <p class="fs-5 mb-4">With all this, PIONERA will enrich the INESData data incubator, boosting semantic interoperability and facilitating the application of artificial intelligence solutions in collaborative environments.</p>
-                                                                   
+
                             </section>
                         </article>
 
-                    
+
                         <!-- Post: Post content-->
                         <article id="post-21">
                             <!---- Post header ---->
@@ -251,14 +207,14 @@
                             </header>
                             <!-- Preview image figure-->
                             <figure class="mb-4 d-flex justify-content-center">
-                                <iframe 
-                                    class="rounded" 
-                                    width="75%" 
-                                    height="400" 
-                                    src="https://www.youtube.com/embed/S95noTif3GY" 
-                                    title="YouTube video player" 
-                                    frameborder="0" 
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                <iframe loading="lazy"
+                                    class="rounded"
+                                    width="75%"
+                                    height="400"
+                                    src="https://www.youtube.com/embed/S95noTif3GY"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen>
                                 </iframe>
                             </figure>
@@ -298,9 +254,9 @@
                                 <p class="fs-5 mb-4">The platform is developed on <em>Eclipse Dataspace Connector (EDC)</em>, ensuring its alignment with European interoperability standards. The workshop allowed participants to practically explore the system's capabilities for reliable data exchange between organizations.</p>
                             </section>
                         </article>
-                        
-                        
-                        
+
+
+
                         <!-- Post: Post content-->
                         <article id="post-19">
                             <!---- Post header ---->
@@ -327,8 +283,8 @@
                             </section>
                         </article>
 
-                        
-                                              
+
+
                         <!-- Post: Post content-->
                         <article id="post-18">
                             <!---- Post header ---->
@@ -341,7 +297,7 @@
                                 <a class="badge bg-secondary text-decoration-none link-light" href="#!">dissemination</a>
                                 <a class="badge bg-secondary text-decoration-none link-light" href="#!">article</a>
                             </header>
-                            
+
                             <!-- Post content-->
                             <section class="mb-5">
                                 <p class="fs-5 mb-4">We announce the publication of the <em>Corpus of Contractual Clauses in Spanish Legal (3CEL)</em>, a reference resource in the field of Natural Language Processing (NLP) applied to contractual law in Spanish. This corpus has been developed by the Instituto de Ingeniería del Conocimiento (IIC) within the context of the INESData project, a project coordinated by the Universidad Politécnica de Madrid (UPM).</p>
@@ -423,7 +379,7 @@
                             <div class="card-body">
                                 <ul style="text-align: left;">
                                 <!-- <ul class="list-unstyled mb-0"> -->
-                                    
+
                                     <li><a href="#post-26">INESData with HARNESS at its 1st Training Workshop</a></li>
                                     <li><a href="#post-25">INESData at the ELDS Country Workshop in Spain</a></li>
                                     <li><a href="#post-24">The INESData team participated in the 10th International Congress of the Spanish Language</a></li>
@@ -431,7 +387,7 @@
                                     <li><a href="#post-23">Kick-off of the PIONERA Project</a></li>
                                     <li><a href="#post-21">Video: AI to transform legal analysis in Spain</a></li>
                                     <li><a href="#post-20">Workshop on the Use of the INESData Connector</a></li>
-                                    <li><a href="#post-19"><em>EU Language Data Space Launch Conference</em> 2025</a></li>                                      
+                                    <li><a href="#post-19"><em>EU Language Data Space Launch Conference</em> 2025</a></li>
                                     <li><a href="#post-18">New Legal NLP Resource: Corpus of Contractual Clauses in Spanish Legal (3CEL) Published</a></li>
                                     <li><a href="#post-17">1st Gaia-X Spain Data Spaces Summit: Presentation of INESData</a></li>
                                     <li><a href="#post-16">UNICO I+D Project Meet-up Madrid 2024</a></li>
@@ -466,26 +422,26 @@
             <div class="row gx-4 gx-lg-5">
                 <h1 class="mb-3">Contexto</h1>
                 <p>Parrafo</p>
-            </div>            
+            </div>
             <div class="row gx-4 gx-lg-5">
                 <h1 class="mb-3">Objetivos</h1>
                 <p>Parrafo</p>
-            </div>            
+            </div>
 
             <div class="row gx-4 gx-lg-5">
                 <h1 class="mb-3">Colaboración público-privada</h1>
                 <p>Parrafo</p>
-            </div>      
-            
+            </div>
+
             <div class="row gx-4 gx-lg-5">
                 <h1 class="mb-3">Equipo</h1>
                 <p>Parrafo</p>
-            </div>       
+            </div>
             -->
         </div>
        <footer class="page-footer clearfix">
-        
-        <div class="footer-wrapper"> 
+
+        <div class="footer-wrapper">
             <nav class="footer-menu clearfix">
           <!--  <img src="../static/images/logopal.png" class="logo2"> !-->
             <img src="../../assets/logos/nextgeneration-logo.png" class="logo1" style="transform: scale(1.5); margin: 0 50px 0 20px;">
@@ -494,17 +450,15 @@
             <img src="../../assets/logos/upm.png" class="logo4" style="margin: 0 20px;">
             <img src="../../assets/logos/oeg-logo.gif" class="logo5" style="transform: scale(0.8); margin: 0 20px;">
 
-           
+
             </nav>
             <div class="container px-4 px-lg-5 text-center">
                 <p class="m-0 text-white footer_text">INESData (Infraestructura para la INvestigación de ESpacios de DAtos distribuidos en UPM) &copy; 2023 - TSI-063100-2022-0001</p>
             </div>
         </div>
-      
+
 </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
+        <!-- Shared site interactions -->
         <script src="../../js/scripts.js"></script>
     </body>
 </html>

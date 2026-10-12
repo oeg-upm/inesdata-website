@@ -3,40 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>INESData</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!-- Favicon-->
+        <meta name="description" content="INESData — Data spaces and AI services by the Ontology Engineering Group at Universidad Politécnica de Madrid." />
+        <meta name="author" content="Ontology Engineering Group, Universidad Politécnica de Madrid" />
+        <title>INESData · OEG-UPM</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Added -->
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Language detector -->
         <script>
-            // Function to redirect to the appropriate language page
-            function redirectToLanguage() {
-                // Check the user's browser language
-                var userLanguage = navigator.language || navigator.userLanguage;
-    
-                // Redirect based on the user's language
-                if (!userLanguage.startsWith('es')) {
-                    window.location.href = './content/es/index.html'; 
-                } else {
-                    // User's language is not Spanish, so redirect to the default page (e.g., English)
-                    window.location.href = './content/en/index.html'; 
-                }
-            }
-    
-            // Call the function when the page loads
-            window.onload = redirectToLanguage;
+            const language = navigator.language || navigator.userLanguage || "en";
+            window.location.replace(language.toLowerCase().startsWith("es")
+                ? "./content/es/index.html"
+                : "./content/en/index.html");
         </script>
     </head>
     <body>
 
     </body>
 </html>
-
